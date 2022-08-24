@@ -9,6 +9,9 @@ from random import choice
 df = pd.read_csv('DATA_CORR.csv', index_col=['Unnamed: 0'])
 df2 = pd.read_csv('Kode_produk.csv')
 
+# inisiasi objeck flask
+app = Flask(__name__)
+
 
 # class Test(Resource):
 @app.route('/products', methods=['POST'])
@@ -87,9 +90,6 @@ def post():
 
     return jsonify(result)
 
-
-# inisiasi objeck flask
-app = Flask(__name__)
 
 # inisasi object flask_restful
 api = Api(app)
