@@ -12,10 +12,10 @@ import warnings
 
 warnings.filterwarnings('ignore')
 
-# read x_train data
+# read DATA_CORRELATION data
 df = pd.read_csv('DATA_CORR.csv', index_col=['Unnamed: 0'])
 
-# read y_train data
+# read KODE_PRODUK data
 df2 = pd.read_csv('Kode_produk.csv')
 
 def execute(produk, data):
